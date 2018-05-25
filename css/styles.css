@@ -38,6 +38,11 @@
   transition: 0.2s;
 }
 
+#ui-datepicker-div {
+  background-color: white;
+  border: 1px solid grey;
+}
+
 a:active,
 a:focus {
   outline: none;

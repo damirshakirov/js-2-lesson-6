@@ -50,7 +50,7 @@ Form.prototype.setEvents = function () {
 Form.prototype.inputCheck = function (event) {
   var id = $(event.currentTarget).attr('id');
   var value = $('#' + id).val();
-  console.log(id, value);
+
   switch (id) {
     case 'email':
       if (this.emailPattern.test(value)) $('#' + id).css('borderColor', 'green');
@@ -72,8 +72,10 @@ Form.prototype.inputCheck = function (event) {
   }
 };
 
-
-
 $(document).ready(function () {
   form = new Form();
+  $("#datepicker").datepicker();
+  $("#anim").on("change", function () {
+    $("#datepicker").datepicker("option", "showAnim", $(this).val());
+  });
 });
