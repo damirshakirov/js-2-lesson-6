@@ -1,0 +1,70 @@
+.task1__form {
+  width: 500px;
+  text-align: left;
+}
+
+
+.task1__form input {
+  width: 150px;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+.task1__form__correct {
+  border: 1px solid red;
+}
+
+.task1__form__error {
+  border: 1px solid red;
+}
+
+.sendButton {
+  background-color: green;
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}
+
+.sendButton:hover {
+  background-color: white;
+  color: green;
+  border: solid 1px green;
+  transition: 0.2s;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input:active,
+textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}

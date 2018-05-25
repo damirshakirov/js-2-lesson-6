@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS-2 | Lesson-6</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="application/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+  <section id='task-1'>
+    <h3>Задание №1</h3>
+    <p>На сайте в форме обратной связи добавьте следующие поля: a) поле даты рождения; b) ошибочные поля подсветить с помощью какого-нибудь эффекта, например, Bounce.</p>
+    <form action="" class='task1__form' name='form'>
+      <div>
+        <label for="name">Имя</label>
+        <input type="texinputt" id='name'>
+      </div>
+      <div>
+        <label for="phone">Телефон</label>
+        <input type="text" id='phone'>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="text" id='email'>
+      </div>
+<!--
+      <div>
+        <label for="city">Город</label>
+        <input type="text" id='city' autocomplete='off'>
+      </div>
+-->
+     <div>
+       <label for="date"></label>
+     </div>
+      <div>
+        <label for="text">Текст</label>
+        <input type="text" id='text'>
+      </div>
+
+      <input type="button" value="Отправить" onclick="check(form)" class='sendButton'>
+    </form>
+  </section>
+
+
+</body>
+
+</html>
