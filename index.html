@@ -12,20 +12,20 @@
 
 <body>
   <section id='task-1'>
-    <h3>Задание №1</h3>
-    <p>На сайте в форме обратной связи добавьте следующие поля: a) поле даты рождения; b) ошибочные поля подсветить с помощью какого-нибудь эффекта, например, Bounce.</p>
+    <h3>Задание №1 и №2</h3>
+    <p>На сайте в форме обратной связи добавьте следующие поля: a) поле даты рождения; b) ошибочные поля подсветить с помощью какого-нибудь эффекта, например, Bounce. Все возвращаемые ошибки выводить с помощью виджета Dialog</p>
     <form action="" class='task1__form' name='form'>
       <div>
         <label for="name">Имя</label>
-        <input type="texinputt" id='name'>
+        <input type="texinputt" id='name' placeholder="John">
       </div>
       <div>
         <label for="phone">Телефон</label>
-        <input type="text" id='phone'>
+        <input type="text" id='phone' placeholder="+7(000)000-0000">
       </div>
       <div>
         <label for="email">E-mail</label>
-        <input type="text" id='email'>
+        <input type="text" id='email' placeholder="john@mail.com">
       </div>
       <!--
       <div>
@@ -35,15 +35,17 @@
 -->
       <div>
         <label for="datepicker">Дата рождения</label>
-        <input type="text" id='datepicker'>
+        <input type="text" id='datepicker' placeholder="mm/dd/yyyy">
       </div>
       <div>
         <label for="text">Текст</label>
-        <input type="text" id='text'>
+        <input type="text" id='text' placeholder="any text">
       </div>
 
-      <input type="button" value="Отправить" onclick="check(form)" class='sendButton'>
+      <input type="button" id='submitForm' value="Отправить" class='sendButton'>
     </form>
+    <div id='dialog'>
+    </div>
   </section>
 
 
