@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-=======
-//// Задание №1
-//check = function (form) {
-//  let name = form.name.value,
-//    phone = form.phone.value,
-//    email = form.email.value,
-//    text = form.text.value,
-//    namePattern = /^[а-яА-ЯёЁa-zA-Z]+$/,
-//    phonePattern = /^\+7\([0-9]{3}\)[0-9]{3}\-[0-9]{4}$/,
-//    emailPattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-//    textPattern = /^.*$/,
-//    errorText = '';
-//  if (namePattern.test(name)) document.getElementById('name').style.border = '1px solid green';
-//  else {
-//    document.getElementById('name').style.border = '1px solid red';
-//    errorText += 'Имя должно содержать только буквы\n';
-//  }
-//  if (phonePattern.test(phone)) document.getElementById('phone').style.border = '1px solid green';
-//  else {
-//    document.getElementById('phone').style.border = '1px solid red';
-//    errorText += 'Телефон должен быть в формате +7(000)000-0000\n';
-//  }
-//  if (emailPattern.test(email)) document.getElementById('email').style.border = '1px solid green';
-//  else {
-//    document.getElementById('email').style.border = '1px solid red';
-//    errorText += 'Укажите корректный email\n';
-//  }
-//  if (textPattern.test(text)) document.getElementById('text').style.border = '1px solid green';
-//  else {
-//    document.getElementById('text').style.border = '1px solid red';
-//    errorText += 'Заполните поле текст произвольным текстом';
-//  }
-//  if (errorText != '') alert(errorText);
-//  else alert('Данные отправлены. Спасибо!');
-//}
-
->>>>>>> 9b8f41de9fd7d924577c889ec7c9d4f1581f4e1e
 var Form = function () {
   this.phonePattern = /^\+7\([0-9]{3}\)[0-9]{3}\-[0-9]{4}$/,
     this.namePattern = /^[а-яА-ЯёЁa-zA-Z]+$/,
@@ -79,11 +41,7 @@ Form.prototype.inputCheck = function (event) {
 
 //Проверка полей после нажатия кнопки 'Отправить'
 Form.prototype.submitForm = function (event) {
-<<<<<<< HEAD
   this.textErrors = '';
-=======
-   this.textErrors='';
->>>>>>> 9b8f41de9fd7d924577c889ec7c9d4f1581f4e1e
   if (this.emailPattern.test($('#email').val()) == false) {
     this.effectError('#email');
     this.textErrors += '<p>Укажите корректный email</p>';
@@ -98,16 +56,10 @@ Form.prototype.submitForm = function (event) {
   };
 
   if (this.textPattern.test($('#text').val()) == false) this.effectError('#text');
-<<<<<<< HEAD
+
   if (this.textErrors == '') this.textErrors = 'Данные отправлены. Спасибо';
   $('#dialog').html(this.textErrors);
   $('#dialog').dialog({
-
-=======
-  $('#dialog').html(this.textErrors);
-  $('#dialog').dialog({
- 
->>>>>>> 9b8f41de9fd7d924577c889ec7c9d4f1581f4e1e
     draggable: false,
     modal: true,
     resizable: false
